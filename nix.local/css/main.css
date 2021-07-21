@@ -1,0 +1,55 @@
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+a {
+    color: #22ad94;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p{
+    margin: 10px;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+
+label{
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px 0;
+    margin: 10px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.message {
+    border: 2px solid #11c413;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.back{
+    color: #0a1ede;
+    font-weight: bold;
+    text-decoration: none;
+}
