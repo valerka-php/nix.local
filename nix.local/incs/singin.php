@@ -7,6 +7,9 @@ require_once 'connect.php';
     $password = md5($_POST['password']);
 
     $check_user = mysqli_query( $connect , "SELECT * FROM `users`  WHERE  `login` = '$login' AND `password` = '$password' ");
+    mysqli_query( $check_user ,"SET NAMES 'utf8'");
+
+
     if (mysqli_num_rows($check_user) > 0 ){
 
         $user = mysqli_fetch_assoc($check_user);
@@ -24,10 +27,3 @@ require_once 'connect.php';
 
     ?>
 
-<!--<pre>-->
-<!--    --><?php
-//    echo mysqli_num_rows($check_user) ;
-//
-//        print_r($user);
-//    ?>
-<!--</pre>-->

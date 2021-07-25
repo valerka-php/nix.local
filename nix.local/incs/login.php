@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if (isset($_SESSION['user'])) {
+        header('location: profile.php');
+    }
+?>
+
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -8,6 +15,7 @@
     <link rel="stylesheet" href="../css/main.css">
 
 </head>
+<body>
 <div>
 
 </div>
@@ -27,7 +35,6 @@
     <p> <a href="../index.php" class="back"> Вернуться на главную </a> </p>
 
     <?php
-    session_start();
         if (isset($_SESSION['message'])) {
             echo '<p class="message">' . $_SESSION['message'] . '</p>';
         }

@@ -6,8 +6,8 @@ body {
     height: 100vh;
 }
 
+
 a {
-    color: #22ad94;
     font-weight: bold;
     text-decoration: none;
 }
@@ -22,7 +22,6 @@ form{
     flex-direction: column;
     width: 400px;
 }
-
 
 label{
     display: flex;
@@ -53,3 +52,4 @@ button {
     font-weight: bold;
     text-decoration: none;
 }
+

@@ -10,7 +10,7 @@ $password_confirm = $_POST['password_confirm'];
 
 if($password === $password_confirm){
 
-    $path = 'uploads/' . time() . $_FILES['photo_avatar']['name'];
+    $path = 'img/' . time() . $_FILES['photo_avatar']['name'];
     if (!move_uploaded_file($_FILES['photo_avatar']['tmp_name'] , '../' . $path)){
         $_SESSION['message'] = "Ошибка при загрузке фотографии";
         header('location: registration.php');
@@ -27,5 +27,4 @@ if($password === $password_confirm){
 
 
 
-?>
 
